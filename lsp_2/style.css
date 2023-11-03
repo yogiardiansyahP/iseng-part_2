@@ -1,0 +1,75 @@
+
+.section-pendidikan {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12rem;
+}
+
+.pendidikan-heading {
+    font-size: 4rem;
+    font-weight: 100;
+    color: #181919;
+    margin-top: 1em;
+    margin-bottom: 2.4rem;
+    text-transform: uppercase;
+}
+
+.pendidikan-img {
+    width: 5em;
+    border-radius: 10px;
+    height: 10em;
+    margin: 2em 3em 0px 3em;
+}
+
+.pendidikan-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 2.4rem;
+    row-gap: 2.4rem;
+}
+
+.pendidikan {
+    position: relative;
+}
+
+.overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.74) 0%, #0D1516 100%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    padding: 2rem;
+    transition: opacity 0.2s;
+}
+
+.pendidikan-line {
+    color: #00B2C5;
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+}
+
+.pendidikan-date {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.pendidikan:hover .overlay {
+    opacity: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(152, 152, 152);
+  color: rgb(43, 41, 41);
+}
